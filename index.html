@@ -68,6 +68,63 @@
   			padding: 10px;
   		}
 
+  		.socialicons a{
+  			background-color: #0e996a;
+  			border-radius: 100px;
+  			width: 25px;
+  			height: 25px;
+  			display: flex;
+  			justify-content: center;
+  			align-items: center;
+  			padding: 20px;
+  			margin: 3px;
+  			color: #dddddd;
+  			text-decoration: none;
+  			transition: 0.4s;
+
+  		}
+
+  		/* Specific hover colors for each icon */
+		.socialicons a:nth-of-type(1):hover {
+		    background-color: #3b5998; /* Facebook */
+		}
+
+		.socialicons a:nth-of-type(2):hover {
+		    background-color: #1da1f2; /* Twitter */
+		}
+
+		.socialicons a:nth-of-type(3):hover {
+		    background-color: #c13584; /* Instagram */
+		}
+
+		.socialicons a:nth-of-type(4):hover {
+		    background-color: #0077b5; /* LinkedIn */
+		}
+
+		.locations{
+			list-style: none;
+			padding-top: 10px;
+		}
+		.locations li:nth-of-type(1){
+			margin-top: 10px;
+		}
+		.locations li a{
+			text-decoration: none;
+			color: grey;
+			font-weight: 400;
+		}
+		.locations li i{
+			color: grey;
+			margin-right: 2px;
+			font-size: 12px;
+		}
+		.locations li:hover i{
+			color: #FF0000;
+		}
+		.locations li:hover a{
+			color: #0e996a;
+		}
+
 
   	</style>
 </head>
@@ -387,6 +444,57 @@
 	<div class="row m-0 mt-4 p-5 d-flex flex-column justify-content-center align-items-center" style="background: #fa7c5b;">
 		<h2 class="text-center text-light fw-bold p-2">Why Choose Heally To Achieve Your Holistic Wellness?</h2>
 		<p class="col-md-9 text-light p-2 fw-bold">Heally is your reliable provider to a world of alternative medicine, where natural therapies work alongside traditional medicine to nurture your whole being. Our platform connects you with doctors and providers who understand the importance of addressing the whole person—physically, mentally, and emotionally. Take the first step toward a holistic lifestyle by connecting with a provider on the Heally platform who can help you navigate alternative medicine options and create a comprehensive plan adapted to your unique needs.</p>
+	</div>
+
+	<!-- footer -->
+	<div class="row m-0 p-5 bg-light justify-content-center">
+		<div class="col-md-4 m-0 p-5  align-items-center">
+			<a class="navbar-brand" href="#" style="color: #0e996a; font-weight: bold;"><h1>ivhomecare</h1></a>
+			<p class="text-secondary">Revitalize Your Health, Anytime, Anywhere with IV Home Care.</p>
+			<div class="socialicons d-flex ">
+				<a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				<a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+			</div>
+		</div>
+		<div class="col-md-2 m-0 p-2">
+			<ul class="locations"><b class="text-secondary">LOCATIONS</b>	
+				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="">San Francisco, CA</a></li>
+				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="">Sacromento Metropolitian Area, CA</a></li>
+				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="">East Bay, CA</a></li>
+				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="">SIlicon Valley, CA</a></li>
+				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="">Palm Springs, CA</a></li>
+				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="">Los Angeles County, CA</a></li>
+				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="">Orange County, CA</a></li>
+				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="">San Diego, CA</a></li>
+				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="">St. Petersburg, Fl</a></li>
+			</ul>
+		</div>
+		<div class="col-md-2 m-0 p-2">
+			<ul class="locations"><b class="text-secondary">HELPFUL LINKS</b>	
+				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">About Us</a></li>
+				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">Blogs</a></li>
+				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">FAQ's</a></li>
+				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">Contact Us</a></li>
+				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">Privacy Policy</a></li>
+			</ul>
+		</div>
+		<div class="col-md-2 m-0 p-2">
+			<ul class="locations"><b class="text-secondary">HELPFUL LINKS</b>	
+				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">About Us</a></li>
+				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">Blogs</a></li>
+				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">FAQ's</a></li>
+				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">Contact Us</a></li>
+				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">Privacy Policy</a></li>
+			</ul>
+		</div>	
+
+	</div>
+	<div class="row m-0 p-2 text-center">
+		<p class="text-secondary">
+			<i class="fa fa-copyright" aria-hidden="true"></i> 2024 IV Home Care. All Rights Reserved. | <a href="" style="text-decoration: none;">Disclamer</a> | <a href="" style="text-decoration: none;">Terms of Service</a>
+		</p>
 	</div>
 </div>
 </body>
