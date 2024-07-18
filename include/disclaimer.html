@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ivhomecare</title>
+	<title>ivhomecare | Disclaimer</title>
 	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -37,13 +37,12 @@
   		}
 
   		.main{
-  			background: url("../assets/images/about4.jpg");
+  			background: url("assets/images/main-banner.jpg");
   			background-attachment: scroll;
   			background-position: center;
   			background-repeat: no-repeat;
   			background-size: cover;
-  			padding-top: 150px;
-			padding-bottom: 150px;
+  			padding: 200px;
   		}
 
   		.ecard{
@@ -69,14 +68,62 @@
   			padding: 10px;
   		}
 
+  		.socialicons a{
+  			background-color: #0e996a;
+  			border-radius: 100px;
+  			width: 25px;
+  			height: 25px;
+  			display: flex;
+  			justify-content: center;
+  			align-items: center;
+  			padding: 20px;
+  			margin: 3px;
+  			color: #dddddd;
+  			text-decoration: none;
+  			transition: 0.4s;
 
-				/* CSS for screens less than 500px wide */
-				@media screen and (max-width: 500px) {
-  .p-5 {
-    padding: 20px !important; /* Adjust padding as needed */
-  }
-}
+  		}
 
+  		/* Specific hover colors for each icon */
+		.socialicons a:nth-of-type(1):hover {
+		    background-color: #3b5998; /* Facebook */
+		}
+
+		.socialicons a:nth-of-type(2):hover {
+		    background-color: #1da1f2; /* Twitter */
+		}
+
+		.socialicons a:nth-of-type(3):hover {
+		    background-color: #c13584; /* Instagram */
+		}
+
+		.socialicons a:nth-of-type(4):hover {
+		    background-color: #0077b5; /* LinkedIn */
+		}
+
+		.locations{
+			list-style: none;
+			padding-top: 10px;
+		}
+		.locations li:nth-of-type(1){
+			margin-top: 10px;
+		}
+		.locations li a{
+			text-decoration: none;
+			color: grey;
+			font-weight: 400;
+		}
+		.locations li i{
+			color: grey;
+			margin-right: 2px;
+			font-size: 12px;
+		}
+		.locations li:hover i{
+			color: #FF0000;
+		}
+		.locations li:hover a{
+			color: #0e996a;
+		}
 
 
   	</style>
@@ -96,7 +143,7 @@
 	      <a class="navbar-brand" href="#" style="color: #0e996a; font-weight: bold;">ivhomecare</a>
 	      <ul class="navbar-nav mx-auto d-flex justify-content-center 	align-items-center">
 	        <li class="nav-item">
-	          <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+	          <a class="nav-link" aria-current="page" href="#">Home</a>
 	        </li>
 	        <li class="nav-item">
 	          <!-- <a class="nav-link" href="#">Link</a> -->
@@ -129,65 +176,31 @@
 			</li>
 
 			<li class="nav-item">
-	          <a class="nav-link" href="services.html">Services</a>
+	          <a class="nav-link" href="include/services.html">Services</a>
 	        </li>
 			<li class="nav-item">
 	          <a class="nav-link" href="#">Health Blog</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="about.html">About Us</a>
+	          <a class="nav-link" href="include/about.html">About Us</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="#">Contact Us</a>
+	          <a class="nav-link" href="include/contact.html">Contact Us</a>
 	        </li>
 	      </ul>
 	    </div>
 	  </div>
 	</nav>
 
-	<!-- Main banner -->
-	<div class="row main m-0 mt-5 d-flex  justify-content-center align-items-center">
-		<div class="col-md-10 d-flex flex-column justify-content-center align-items-center mt-5 p-5">
-			<h1 class="text-light fw-bold">About Us</h1>
-			<p class="text-light fw-bold">Heally’s mission is to provide access to doctors who treat the root cause of ailments with natural products.</p>
-		</div>
-		<!-- <div class="col-md-4"></div>
-		<div class="col-md-4 mt-5 p-2 bg-light">
-			<h1 class=" fw-bold">Holistic Health Starts Here</h1>
-		</div> -->
-	</div>
-
-    <div class="row d-flex justify-content-center align-items-center m-0 mt-5">
-		<div class="col-md-4 m-0 p-5">
-			<img src="../assets/images/holistic_products.webp" alt="holistic_products" class="img-fluid">
-		</div>
-		<div class="col-md-5 m-0 p-5">
-			<h1 style="color:#0e996a;">Why try Heally Health today?</h1>
-			<p class="p-2">We make it easy to meet with a licensed physician who will recommend natural and alternative treatment based on the cause of your ailments, not just the symptoms.</p>
-            <p class="p-2 fw-bold">There is no cost to create an account and our physicians are available on-demand from 9:00 AM to 10:00 PM Pacific, 7 days a week.</p>
-        </div>
-	</div>
-
-    <div class="row m-0 mt-3 p-0">
-        <div class="col-md-4 m-0 p-0"><img src="../assets/images/online_girl.webp" alt="online_girl" class="img-fluid"></div>
-        <div class="col-md-4 m-0 p-3" style="background: #0e996a;">
-            <h2 class="p-2 mt-2 text-light">Heally</h2>
-            <p class="p-2 text-light">Heally’s mission is to make it easier for people to choose alternatives to opiates and other drugs, for both pain relief and the improvement of overall health. We do this in a few ways. First, Heally provides telehealth visits with a licensed physician who is knowledgeable in the medicinal aspects of cannabis and other holistic routes. You will receive professional advice regarding effective natural treatments for your condition, all without ever leaving your home.</p>
-        </div>
-        <div class="col-md-4 m-0 p-0"><img src="../assets/images/happy_father.webp" alt="happy_father" class="img-fluid"></div>
-    </div>
-    <div class="row m-0 p-0">
-        <div class="col-md-4 m-0 p-3">
-            <h2 class="p-2 mt-3 ">Natural, Holistic Treatment</h2>
-            <p class="p-2">Doctors on the Heally platform provide certifications and recommendations for products that can help patients achieve their treatment goals.</p>
-        </div>
-        <div class="col-md-4 m-0 p-0"><img src="../assets/images/old_couple.webp" alt="old_couple" class="img-fluid"></div>
-        <div class="col-md-4 m-0 p-3" style="background:#fa7c5b;">
-            <h2 class="p-2 mt-3 text-light">Our Mission</h2>
-            <p class="p-2 text-light">Heally’s mission is to make it easier for people to choose alternatives to opiates and other drugs, for both pain relief and the improvement of overall health. We do this in a few ways. First, Heally provides telehealth visits with a licensed physician who is knowledgeable in the medicinal aspects of cannabis and other holistic routes. You will receive professional advice regarding effective natural treatments for your condition, all without ever leaving your home.</p>
+	<div class="row p-2 d-flex justify-content-center" style="margin: 0px; margin-top: 100px;">
+        <div class="col-md-6">
+            <h1 class="mt-3">Disclaimer</h1>
+            <p class="text-secondary">The information provided on this website is for general informational purposes only. It is not intended as medical advice and should not be relied upon as a substitute for professional medical consultation, diagnosis, or treatment. Always seek the advice of your physician or other qualified healthcare provider with any questions you may have regarding a medical condition or treatment. Never disregard professional medical advice or delay in seeking it because of something you have read on this website.</p>
+            <p class="text-secondary">IV drip therapy is not suitable for everyone. The effectiveness and safety of IV drip therapy may vary from person to person. The content on this website does not constitute an endorsement of any specific therapy, treatment, or procedure, and the results of any therapy cannot be guaranteed.</p>
+            <p class="text-secondary">Before starting any new treatment or therapy, including IV drip therapy, it is important to undergo a thorough evaluation by a healthcare professional to determine if it is appropriate for your specific health needs and conditions. This website and its owners do not make any warranties about the completeness, reliability, or accuracy of the information contained on the site or the products and services offered.</p>
+            <p class="text-secondary">Using this website, you acknowledge and agree that using any information or services provided is solely at your own risk. This website and its owners will not be liable for any losses or damages in connection with the use of our website.</p>
         </div>
     </div>
-
 </div>
 </body>
 </html>
