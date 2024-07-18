@@ -42,8 +42,21 @@
   			background-position: center;
   			background-repeat: no-repeat;
   			background-size: cover;
-  			padding: 200px;
+  			padding-top: 150px;
+			padding-bottom: 150px;
   		}
+
+		.mbtn{
+			background-color:#0e996a;
+			border: none;
+			color: #dddddd;
+			padding: 15px;
+			transition: 0.5s;
+		}
+		.mbtn:hover{
+			background-color: #ddd;
+			color: #0e996a;
+		}
 
   		.ecard{
   			box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
@@ -57,16 +70,55 @@
   		}
   		.ecard i{ font-size: 40px; margin: 5px; padding: 10px; color: #003c46; }
   		.ecard h5{margin: 5px; padding: 10px; color: #003c46;}
-  		.rcard{
+  		.ccard{
   			box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-  			margin: 5px;
-  			width: 300px;
-  			/*height: 180px;*/
-  			display: flex;
-  			justify-content: center;
-  			align-items: center;
   			padding: 10px;
+			display: flex;
+			flex-direction: column;
+			height: 100%; 
   		}
+
+		.ccard i{
+			background-color: #0e996a;
+			padding: 25px;
+			border-radius: 100px;
+			width: 25px;
+			height: 25px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #dddddd;
+		}
+
+		.searchbox {
+		position: relative;
+		display: inline-block;
+		padding: 0px;
+		border: 1px solid #555;
+		}
+
+		.searchbox input {
+		padding-right: 30px; /* Adjust as needed to accommodate icon */
+		width: 200px; /* Adjust width as needed */
+		border: none;
+		outline: none;
+		padding: ;
+		}
+
+		.searchbox button {
+		/* position: absolute; */
+		top: 0;
+		right: 0;
+		padding: 10px 15px;
+		background-color:unset;
+		border: none;
+		cursor: pointer;
+		}
+
+		.searchbox button i {
+		color: #555;
+		}
+
 
   		.socialicons a{
   			background-color: #0e996a;
@@ -124,6 +176,33 @@
 		.locations li:hover a{
 			color: #0e996a;
 		}
+
+		.subscription input{
+			padding: 9px;
+		}
+
+		.subscription button{
+			padding: 10px;
+			border: none;
+			background-color: #0e996a;
+			color: #dddddd	;
+			transition: 0.5s;
+		}
+
+		.subscription button:hover{
+			background-color: #fa7c5b;
+		}
+
+		/* CSS for screens less than 500px wide */
+		@media screen and (max-width: 500px) {
+  .p-5 {
+    padding: 20px !important; /* Adjust padding as needed */
+  }
+  .searchbox input {
+		width: 180px; 
+		}
+}
+
 
 
   	</style>
@@ -194,125 +273,113 @@
 
 	<!-- Main banner -->
 	<div class="row main m-0 mt-5">
-		<div class="col-md-4 mt-5 p-3">
-			<h1 class="text-light fw-bold">Holistic Health Starts Here</h1>
-			<p class="text-light fw-bold">Heally connects you to holistic doctors and clinics in-office or online via telehealth. Schedule an appointment with a holistic health practitioner to improve your well-being and mind-body connection through anti-aging medication, IV therapy, semaglutide prescription, TRT, and other integrative medicine services.</p>
+		<div class="col-md-4 mt-5 p-5">
+			<h1 class="text-light fw-bold">Your Trusted Partner For Liquid IV Therapy</h1>
+			<p class="text-light">Mobile IV Therapy and Wellness Services Delivered To You</p>
+			<p class="text-light fw-bold">We are the USA's top-rated IV and mobile infusion therapy provider. Discover our services to rejuvenate your health and book your appointment today.</p>
+			<button class="mbtn">SCHEDULE IV DRIP</button>
 		</div>
 		<!-- <div class="col-md-4"></div>
 		<div class="col-md-4 mt-5 p-2 bg-light">
 			<h1 class=" fw-bold">Holistic Health Starts Here</h1>
 		</div> -->
 	</div>
-
-	<div class="row m-0 p-5 d-flex justify-content-center align-items-center">
-		<div class="col-md-6 bg-light p-5">
-			<h2 class="fw-bold p-3" style="color:#003c46;">Connect To Alternative Medicine Practitioners</h2>
-			<p class="text-secondary fw-bold p-3">Use Heally to easily get holistic medicine services. With our telehealth platform, you can connect to a variety of alternative medicine doctors, including Functional Medicine, IV therapy, Weight Loss, and Longevity practitioners. The doctor will evaluate your condition, and prescribe medication if necessary.</p>
-			<div class="mt-2 d-flex justify-content-center align-items-center">
-				<button class="m-2 btn p-2 px-5 border rounded-pill" style="background:#fa7c5b;">Patient LogIn</button>
-			</div>
-		</div>
-		<div class="col-md-6 d-flex justify-content-center flex-wrap p-5">
-			<div class="ecard p-2">
-				<i class="fa fa-users" aria-hidden="true"></i>
-				<h5>Largest Network of Holistic Medicine Doctors and Providers</h5>
-			</div>
-			<div class="ecard p-2">
-				<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
-				<h5>Online,Open every day of the week</h5>
-			</div>
-			<div class="ecard p-2">
-				<i class="fa fa-mobile" aria-hidden="true"></i>
-				<h5>Secure and compliant with HIPAA standards</h5>
-			</div>
-			<div class="ecard p-2">
-				<i class="fa fa-usd" aria-hidden="true"></i>
-				<h5>Affordable Care for Anyone on a Budget</h5>
-			</div>
-		</div>
+	<div class="row m-0 mt-5 p-2 d-flex flex-column justify-content-center align-items-center">
+		<h2 class="text-center fw-bold p-2" style="color:#003c46;">Benefits of Mobile IV Therapy</h2>
+		<p class="col-md-10 text-center text-secondary p-2 fw-bold">At IV Home Care, our IV wellness infusions are designed to deliver essential vitamins and minerals directly into your bloodstream. This method ensures maximum absorption and immediate benefits, catering to the needs of our fast-paced lives. Discover a new level of IV wellness with our customized IV infusion therapy delivered by our experienced healthcare professionals, all in the comfort of your home.</p>
 	</div>
-	<div class="row m-0 mt-4 p-2 d-flex flex-column justify-content-center align-items-center">
-		<h2 class="text-center fw-bold p-2" style="color:#003c46;">Holistic Treatment Using Integrative Approach</h2>
-		<p class="col-md-10 text-center text-secondary p-2 fw-bold">The Heally platform is home to a wide range of holistic medicine providers to meet your health and wellness needs. Providers are online from 7a.m. to 10p.m. every day. They are available to help you determine which treatment is best for you. Using our platform, you can find holistic medicine services for anxiety or an alternative medicine doctor for ADHD.</p>
+	<!-- Benefits -->
+	<div class="row m-0 mt-4 p-5 d-flex justify-content-center">
+			<div class="col-md-3 p-2">
+				<div class="ccard">
+					<div class="d-flex justify-content-center p-2"><i class="fa fa-stethoscope" aria-hidden="true"></i></div>
+					<p class="text-center">Enhanced Convenience</p>
+					<p class="text-secondary p-2">IV Home Care provides unparalleled convenience by bringing medical treatments directly to your home. No more waiting rooms, long commutes, or disrupted schedules. Receive essential IV therapy in the comfort of your own space, making it easier to fit your treatment into your daily life.</p>	
+				</div>
+			</div>
+			<div class="col-md-3 p-2">
+				<div class="ccard">
+					<div class="d-flex justify-content-center p-2"><i class="fa fa-stethoscope" aria-hidden="true"></i></div>
+					<p class="text-center">Personalized Care</p>
+					<p class="text-secondary p-2">When you choose IV Home Care, you receive tailored treatments designed specifically for your needs. Our skilled healthcare professionals assess your condition and customize the IV therapy to address your unique health requirements. </p>
+				</div>
+			</div>
+			<div class="col-md-3 p-2">
+				<div class="ccard">
+					<div class="d-flex justify-content-center p-2"><i class="fa fa-stethoscope" aria-hidden="true"></i></div>
+					<p class="text-center">Faster Recovery</p>
+					<p class="text-secondary p-2">IV therapy is known for its rapid absorption and effectiveness. By delivering nutrients, vitamins, and medications directly into your bloodstream, IV therapy can expedite recovery times from illnesses, dehydration, and fatigue. This direct delivery method ensures your body gets what it needs quickly and efficiently.</p>
+				</div>
+			</div>
+			<div class="col-md-3 p-2">
+				<div class="ccard">
+					<div class="d-flex justify-content-center p-2"><i class="fa fa-stethoscope" aria-hidden="true"></i></div>
+					<p class="text-center">Improved Hydration</p>
+					<p class="text-secondary p-2">Proper hydration is crucial for overall health and well-being. IV therapy can help maintain optimal hydration levels, which is especially beneficial for those with conditions that make it challenging to stay hydrated. Whether you're recovering from an illness or need extra hydration support, IV therapy ensures your body remains well-hydrated.</p>
+				</div>
+			</div>
+			<div class="col-md-3 p-2">
+				<div class="ccard">
+					<div class="d-flex justify-content-center p-2"><i class="fa fa-stethoscope" aria-hidden="true"></i></div>
+					<p class="text-center">Enhanced Nutrient Absorption</p>
+					<p class="text-secondary p-2">Unlike oral supplements, IV therapy allows for 100% absorption of essential vitamins and minerals. This method bypasses the digestive system, ensuring that your body receives the full benefit of the nutrients. This can be particularly advantageous for individuals with digestive issues or those needing a nutritional boost.</p>	
+				</div>
+			</div>
+			<div class="col-md-3 p-2">
+				<div class="ccard">
+					<div class="d-flex justify-content-center p-2"><i class="fa fa-stethoscope" aria-hidden="true"></i></div>
+					<p class="text-center">Boosted Immune System</p>
+					<p class="text-secondary p-2">Regular IV therapy can support and strengthen your immune system. By providing high doses of vitamins, such as Vitamin C and other immune-boosting nutrients, IV therapy helps your body fend off illnesses more effectively and recover faster when you do get sick. </p>
+				</div>
+			</div>
+			<div class="col-md-3 p-2">
+				<div class="ccard">
+					<div class="d-flex justify-content-center p-2"><i class="fa fa-stethoscope" aria-hidden="true"></i></div>
+					<p class="text-center">Relief from Chronic Conditions</p>
+					<p class="text-secondary p-2">For those suffering from chronic conditions such as migraines, fibromyalgia, or chronic fatigue syndrome, IV therapy can offer significant relief. Tailored treatments can help manage symptoms, reduce pain, and improve quality of life.</p>
+				</div>
+			</div>
+			<div class="col-md-3 p-2">
+				<div class="ccard">
+					<div class="d-flex justify-content-center p-2"><i class="fa fa-stethoscope" aria-hidden="true"></i></div>
+					<p class="text-center">Stress Reduction</p>
+					<p class="text-secondary p-2">Receiving IV therapy at home can significantly reduce the stress associated with traveling to and from medical facilities. This is particularly beneficial for patients with mobility issues, severe fatigue, or those who simply prefer the privacy and comfort of their own home.</p>
+				</div>
+			</div>
 	</div>
-	<!-- Reviews -->
-	<div class="row m-0 mt-4 p-2">
-		<h2 class="text-center fw-bold p-2" style="color:#003c46;">Reviews About Heally Services</h2>
-		<div class="m-0 p-2 px-5 d-flex flex-wrap justify-content-center align-items-start">
-			<div class="rcard p-2">
-				<figure class="p-2">
-				  <blockquote class="blockquote">
-				    <p>A well-known quote, contained in a blockquote element. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap </p>
-				  </blockquote>
-				  <figcaption class="blockquote-footer">
-				    Someone famous in <cite title="Source Title">Source Title</cite>
-				  </figcaption>
-				</figure>
-			</div>
-			<div class="rcard p-2">
-				<figure class="p-2">
-				  <blockquote class="blockquote">
-				    <p>A well-known quote, contained in a blockquote element. Lorem Ipsum is simply dummy text of the , when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap </p>
-				  </blockquote>
-				  <figcaption class="blockquote-footer">
-				    Someone famous in <cite title="Source Title">Source Title</cite>
-				  </figcaption>
-				</figure>
-			</div>
-			<div class="rcard p-2">
-				<figure class="p-2">
-				  <blockquote class="blockquote">
-				    <p>A well-known quote, contained in a blockquote element. Lorem Ipsum is simply dummy text of the printing and printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap </p>
-				  </blockquote>
-				  <figcaption class="blockquote-footer">
-				    Someone famous in <cite title="Source Title">Source Title</cite>
-				  </figcaption>
-				</figure>
-			</div>
-		</div>
-	</div>
+	
 
 	<div class="row m-0 mt-5 p-5 d-flex justify-content-center align-items-center">
 		<div class="col-md-6 m-0">
-			<h2 class="fw-bold text-success">What Is Holistic Health?</h2>
-			<p class="fw-bold text-secondary">Alternative medicine unites various approaches that focus on holistic well-being, addressing the body, mind, and spirit. It focuses on treating the whole person, considering physical, mental, and emotional aspects. Practices like acupuncture, reflexology, ayurveda herbal medicine, and chiropractic care are examples of alternative medicine. Additionally, it is a good source for attempting to heal when traditional medicine is not working or causing negative side effects. Alternative medicine can be used for depression treatment and anxiety therapy, possibly helping with chronic pain, improving gut health, boosting your immune system, treating skin impurities, and improving the overall quality of one’s life. Examples of alternative healing methods include:</p>
-			<div class="d-flex">
-				<div class="flex-fill">
-					<p><i class="fa fa-check text-success" aria-hidden="true"></i> Homeopathy</p>
-					<p><i class="fa fa-check text-success" aria-hidden="true"></i> Hypnotherapy</p>
-					<p><i class="fa fa-check text-success" aria-hidden="true"></i> IV Drips</p>
-					<p><i class="fa fa-check text-success" aria-hidden="true"></i> Breathwork</p>
-				</div>
-				<div class="flex-fill">
-					<p><i class="fa fa-check text-success" aria-hidden="true"></i> Peptides</p>
-					<p><i class="fa fa-check text-success" aria-hidden="true"></i> Nutritional Healing</p>
-					<p><i class="fa fa-check text-success" aria-hidden="true"></i> Medical Card</p>
-					<p><i class="fa fa-check text-success" aria-hidden="true"></i> Acupuncture</p>
-				</div>
-				<div class="flex-fill">
-					<p><i class="fa fa-check text-success" aria-hidden="true"></i> Mental Health</p>
-					<p><i class="fa fa-check text-success" aria-hidden="true"></i> Semaglutide</p>
-					<p><i class="fa fa-check text-success" aria-hidden="true"></i> Fertility</p>
-					<p><i class="fa fa-check text-success" aria-hidden="true"></i> Meditation</p>
-				</div>
-			</div>
+			<h2 class="fw-bold text-success">WHO WE ARE?</h2>
+			<p class="fw-bold text-secondary">We Bring Our IV Drips to You</p>
+			<p class="text-secondary">At IV Home Care, we make experiencing the rejuvenating benefits of IV drips easy and convenient by bringing our services to your doorstep. Our concierge services are designed to fit seamlessly into your health and wellness routines, allowing you to enjoy IV drips in the comfort and privacy of your home.</p>
+			<p class="text-secondary">WOur IV drips are a fantastic way for business owners and managers to treat their employees and show appreciation for their hard work. Whether it's for recovery after a long night out or managing a chronic illness that makes it hard to visit a clinic, our mobile IV drips are the perfect solution.</p>
+			<p class="text-secondary">Discover the convenience and effectiveness of IV therapy delivered by our professional and experienced healthcare team, and elevate your wellness routine with IV Home Care.</p>
 		</div>
-		<div class="col-md-6 m-0 mt-5">
-			<img src="assets/images/how-does-alt-med-work.webp" alt="how-does-alt-med-work" class="img-fluid">
+		<div class="col-md-5 m-0 mt-5">
+			<img src="assets/images/whoweare3.png" alt="who-we-are" class="img-fluid">
 		</div>
 	</div>
 	<div class="row m-0 mt-5">
-		<div class="col-md-5 m-0 p-5">
-			<img src="assets/images/happy.webp" alt="happy" class="img-fluid">
+		<div class="col-md-6 m-0 p-5">
+			<img src="assets/images/booking.png" alt="booking" class="img-fluid">
 		</div>
-		<div class="col-md-7 m-0 p-5">
-			<h1 style="color:#fa7c5b;">What Does It Mean To Live A Holistic Lifestyle?</h1>
-			<p>Living a holistic lifestyle isn't about abandoning conventional medicine, but rather complementing it with a personalized approach to well-being. By integrating natural therapies like breathwork and mindfulness practices alongside traditional healthcare, you can address the underlying causes of health concerns and pave the way for a more vibrant, balanced life. Alternative medicine practitioners on Heally work collaboratively with you to develop a holistic plan that considers your unique needs and preferences. From personalized nutrition and stress management techniques to exploring gentle, non-invasive therapies, our platform empowers you to take control of your health in a way that resonates with your values and goals.</p>
+		<div class="col-md-6 m-0 p-5">
+			<h1 style="color:#fa7c5b;">Book Your IV Infusion Therapy in USA Today</h1>
+			<p>Experience the convenience of IV Home Care by booking your IV infusion therapy in USA today. Our healthcare professionals bring tailored vitamin infusions directly to you, including IV vitamins, minerals, intramuscular shots, and amino acids. Enjoy personalized treatment in the comfort of your own home.</p>
+			<p class="text-secondary">ENTER YOUR POSTCODE BELOW</p>
+			<div class="searchbox">
+				<button type="submit">
+				  <i class="fa fa-search"></i>
+				</button>
+				<input type="text" placeholder="Enter Your Passcode">
+			</div>  
 		</div>
 	</div>
 	<div class="row m-0 mt-4 p-2 d-flex flex-column justify-content-center align-items-center">
-		<h2 class="text-center fw-bold p-2 text-success">Holistic Medicine Benefits</h2>
-		<p class="col-md-6 text-center text-secondary p-2 fw-bold">Holistic medicine approach often leads to improved overall health and a better quality of life. Here's how integrative medicine benefits you:</p>
+		<h2 class="text-center fw-bold p-2 text-success">Transform Your Health with IV Home Care</h2>
+		<p class="col-md-6 text-center text-secondary p-2 fw-bold">Don't wait to experience the revitalizing benefits of personalized IV infusion therapy. Our expert healthcare professionals are ready to bring tailored vitamin infusions, minerals, intramuscular shots, and amino acids directly to your doorstep. Enjoy the ultimate convenience and effectiveness of in-home treatment designed just for you.</p>
 	</div>
 	<div class="row m-0 p-4 d-flex justify-content-center align-items-center">
 				<div class="col-md-3">
@@ -332,7 +399,7 @@
 	</div>
 
 	<!-- faq's -->
-	<div class="row m-0 mt-4 p-2 px-5 bg-light d-flex justify-content-center align-items-start">
+	<div class="row m-0 mt-4 p-2 bg-light d-flex justify-content-center align-items-start">
 		<h2 class="text-center fw-bold p-5">FAQ</h2>
 		<div class="col-md-5 m-0 p-2">
 			<div class="accordion" id="accordionExample">
@@ -442,13 +509,16 @@
 	</div>
 	<!-- faq's end -->
 	<div class="row m-0 mt-4 p-5 d-flex flex-column justify-content-center align-items-center" style="background: #fa7c5b;">
-		<h2 class="text-center text-light fw-bold p-2">Why Choose Heally To Achieve Your Holistic Wellness?</h2>
-		<p class="col-md-9 text-light p-2 fw-bold">Heally is your reliable provider to a world of alternative medicine, where natural therapies work alongside traditional medicine to nurture your whole being. Our platform connects you with doctors and providers who understand the importance of addressing the whole person—physically, mentally, and emotionally. Take the first step toward a holistic lifestyle by connecting with a provider on the Heally platform who can help you navigate alternative medicine options and create a comprehensive plan adapted to your unique needs.</p>
+		<h2 class="text-center text-light fw-bold p-2">Transform Your Health with IV Home Care</h2>
+		<p class="col-md-9 text-light p-2 fw-bold">Don't wait to experience the revitalizing benefits of personalized IV infusion therapy. Our expert healthcare professionals are ready to bring tailored vitamin infusions, minerals, intramuscular shots, and amino acids directly to your doorstep. Enjoy the ultimate convenience and effectiveness of in-home treatment designed just for you.</p>
+		<div class="text-center mt-5">
+			<button style="border: none; padding: 10px 30px;"> Book Online</button>
+		</div>
 	</div>
 
 	<!-- footer -->
 	<div class="row m-0 p-5 bg-light justify-content-center">
-		<div class="col-md-4 m-0 p-5  align-items-center">
+		<div class="col-lg	-5 m-0 p-5  align-items-center">
 			<a class="navbar-brand" href="#" style="color: #0e996a; font-weight: bold;"><h1>ivhomecare</h1></a>
 			<p class="text-secondary">Revitalize Your Health, Anytime, Anywhere with IV Home Care.</p>
 			<div class="socialicons d-flex ">
@@ -458,7 +528,7 @@
 				<a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 			</div>
 		</div>
-		<div class="col-md-2 m-0 p-2">
+		<div class="col-lg-2 m-0 p-2">
 			<ul class="locations"><b class="text-secondary">LOCATIONS</b>	
 				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="">San Francisco, CA</a></li>
 				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="">Sacromento Metropolitian Area, CA</a></li>
@@ -471,7 +541,7 @@
 				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="">St. Petersburg, Fl</a></li>
 			</ul>
 		</div>
-		<div class="col-md-2 m-0 p-2">
+		<div class="col-lg-2 m-0 p-2">
 			<ul class="locations"><b class="text-secondary">HELPFUL LINKS</b>	
 				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">About Us</a></li>
 				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">Blogs</a></li>
@@ -480,20 +550,19 @@
 				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">Privacy Policy</a></li>
 			</ul>
 		</div>
-		<div class="col-md-2 m-0 p-2">
-			<ul class="locations"><b class="text-secondary">HELPFUL LINKS</b>	
-				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">About Us</a></li>
-				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">Blogs</a></li>
-				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">FAQ's</a></li>
-				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">Contact Us</a></li>
-				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">Privacy Policy</a></li>
-			</ul>
+		<div class="col-lg-3 m-0 p-2">
+			<h4 class="p-2 fw-bold text-secondary">Subscribe our newsletter</h4>
+			<p class="text-secondary">Filter out thenoise and nurture your inbox with health and wellness advice that's inclusive and rooted in medical expertise</p>
+			<div class="subscription">
+				<input type="text" class="mt-1"	 placeholder="Enter your Email">
+				<button class="mt-1">SUBSCRIBE</button>
+			</div>
 		</div>	
 
 	</div>
 	<div class="row m-0 p-2 text-center">
 		<p class="text-secondary">
-			<i class="fa fa-copyright" aria-hidden="true"></i> 2024 IV Home Care. All Rights Reserved. | <a href="" style="text-decoration: none;">Disclamer</a> | <a href="" style="text-decoration: none;">Terms of Service</a>
+			<i class="fa fa-copyright" aria-hidden="true"></i> 2024 IV Home Care. All Rights Reserved. | <a href="include/disclaimer.html" style="text-decoration: none;">Disclamer</a> | <a href="include/terms.html" style="text-decoration: none;">Terms of Service</a>
 		</p>
 	</div>
 </div>
