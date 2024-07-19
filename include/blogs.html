@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ivhomecare</title>
+	<title>ivhomecare | Blogs</title>
 	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -37,13 +37,12 @@
   		}
 
   		.main{
-  			background: url("../assets/images/about4.jpg");
+  			background: url("assets/images/main-banner.jpg");
   			background-attachment: scroll;
   			background-position: center;
   			background-repeat: no-repeat;
   			background-size: cover;
-  			padding-top: 150px;
-			padding-bottom: 150px;
+  			padding: 200px;
   		}
 
   		.ecard{
@@ -58,23 +57,40 @@
   		}
   		.ecard i{ font-size: 40px; margin: 5px; padding: 10px; color: #003c46; }
   		.ecard h5{margin: 5px; padding: 10px; color: #003c46;}
-  		.rcard{
+  		.bcard{
   			box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   			margin: 5px;
-  			width: 300px;
-  			/*height: 180px;*/
-  			display: flex;
-  			justify-content: center;
-  			align-items: center;
-  			padding: 10px;
+  		}
+  		.bcard .imaged{
+  			/*width: 250px;*/
   		}
 
+  		.blogcontent {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* Limit to three lines */
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis; /* Add ellipsis (...) for overflow */
+    }
 
-				/* CSS for screens less than 500px wide */
-				@media screen and (max-width: 500px) {
+    	.morebtn{
+    		text-decoration: none;
+    		color: #0e996a;
+    		transition: 0.4s;
+    	}
+    	.morebtn:hover{
+    		letter-spacing: 1px;
+    	}
+
+
+  			/* CSS for screens less than 500px wide */
+		@media screen and (max-width: 500px) {
   .p-5 {
     padding: 20px !important; /* Adjust padding as needed */
   }
+  .searchbox input {
+		width: 180px; 
+		}
 }
 
 
@@ -138,56 +154,52 @@
 	          <a class="nav-link" href="about.html">About Us</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="#">Contact Us</a>
+	          <a class="nav-link" href="include/contact.html">Contact Us</a>
 	        </li>
 	      </ul>
 	    </div>
 	  </div>
 	</nav>
 
-	<!-- Main banner -->
-	<div class="row main m-0 mt-5 d-flex  justify-content-center align-items-center">
-		<div class="col-md-10 d-flex flex-column justify-content-center align-items-center mt-5 p-5">
-			<h1 class="text-light fw-bold">About Us</h1>
-			<p class="text-light fw-bold">Heally’s mission is to provide access to doctors who treat the root cause of ailments with natural products.</p>
+	<div class="row m-0 mt-5 p-2 d-flex justify-content-center">
+		<div class="col-md-8 m-0 p-5 d-flex flex-wrap justify-content-start">
+		<h1 class="m-0 p-2 py-5" style="color:#fa7c5b;">Blogs</h1>
+		<div class="bcard row m-2 p-0 d-flex justify-content-start">
+			<div class="col-md-5 m-0 p-0 d-flex justify-content-start align-items-center">
+				<img src="../assets/images/blog1.png" style="width:100%; height:100%; object-fit: cover;">
+			</div>
+			<div class="col-md-7 m-0 p-4">
+				<h6>The Comprehensive Guide to IV Vitamin Therapy</h6>
+				<p>July 20, 2024</p>
+				<p class="blogcontent text-secondary  m-0">Intravenous (IV) therapy is a medical technique that delivers fluids directly into a vein, allowing for rapid absorption of water, medication, blood, or nutrients. This method has gained popularity due to its efficiency and effectiveness. Among the various applications of IV therapy, IV Vitamin Therapy stands out for its potential health benefits. This blog will delve into IV Vitamin Therapy, its benefits, real-life</p><br>
+				<a href="" class="morebtn">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+			</div>
 		</div>
-		<!-- <div class="col-md-4"></div>
-		<div class="col-md-4 mt-5 p-2 bg-light">
-			<h1 class=" fw-bold">Holistic Health Starts Here</h1>
-		</div> -->
-	</div>
-
-    <div class="row d-flex justify-content-center align-items-center m-0 mt-5">
-		<div class="col-md-4 m-0 p-5">
-			<img src="../assets/images/holistic_products.webp" alt="holistic_products" class="img-fluid">
+		<div class="bcard row m-2 p-0 d-flex justify-content-start">
+			<div class="col-md-5 m-0 p-0 d-flex justify-content-start align-items-center">
+				<img src="../assets/images/blog2.png" style="width:100%; height:100%; object-fit: cover;">
+			</div>
+			<div class="col-md-7 m-0 p-4">
+				<h6>What is IV Vitamin Therapy?</h6>
+				<p>July 10, 2024</p>
+				<p class="blogcontent text-secondary m-0">IV Vitamin Therapy involves infusing a mixture of vitamins and minerals directly into the bloodstream through a small tube inserted into a vein. This bypasses the digestive system, allowing for faster and more efficient absorption of nutrients. The therapy is performed in a medical office under the supervision of licensed medical professionals, ensuring a safe and controlled environment.</p><br>
+				<a href="" class="morebtn">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+			</div>
 		</div>
-		<div class="col-md-5 m-0 p-5">
-			<h1 style="color:#0e996a;">Why try Heally Health today?</h1>
-			<p class="p-2">We make it easy to meet with a licensed physician who will recommend natural and alternative treatment based on the cause of your ailments, not just the symptoms.</p>
-            <p class="p-2 fw-bold">There is no cost to create an account and our physicians are available on-demand from 9:00 AM to 10:00 PM Pacific, 7 days a week.</p>
-        </div>
+		<div class="bcard row m-2 p-0 d-flex justify-content-start">
+			<div class="col-md-5 m-0 p-0 d-flex justify-content-start align-items-center">
+				<img src="../assets/images/whoweare2.png" style="width:100%; height:100%; object-fit: cover;">
+			</div>
+			<div class="col-md-7 m-0 p-4">
+				<h6>Effectiveness of IV Vitamin Therapy?</h6>
+				<p>July 05	, 2024</p>
+				<p class="blogcontent text-secondary m-0">Despite the widespread use of vitamin supplements, many adults are turning to IV Vitamin Therapy as a more effective alternative. According to recent statistics, 86% of adults in the United States take vitamin supplements. H The therapy is performed in a medical office under the supervision of licensed medical professionals, ensuring a safe and controlled environment.</p><br>
+				<a href="" class="morebtn">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+			</div>
+		</div>
 	</div>
-
-    <div class="row m-0 mt-3 p-0">
-        <div class="col-md-4 m-0 p-0"><img src="../assets/images/online_girl.webp" alt="online_girl" class="img-fluid"></div>
-        <div class="col-md-4 m-0 p-3" style="background: #0e996a;">
-            <h2 class="p-2 mt-2 text-light">Heally</h2>
-            <p class="p-2 text-light">Heally’s mission is to make it easier for people to choose alternatives to opiates and other drugs, for both pain relief and the improvement of overall health. We do this in a few ways. First, Heally provides telehealth visits with a licensed physician who is knowledgeable in the medicinal aspects of cannabis and other holistic routes. You will receive professional advice regarding effective natural treatments for your condition, all without ever leaving your home.</p>
-        </div>
-        <div class="col-md-4 m-0 p-0"><img src="../assets/images/happy_father.webp" alt="happy_father" class="img-fluid"></div>
-    </div>
-    <div class="row m-0 p-0">
-        <div class="col-md-4 m-0 p-3">
-            <h2 class="p-2 mt-3 ">Natural, Holistic Treatment</h2>
-            <p class="p-2">Doctors on the Heally platform provide certifications and recommendations for products that can help patients achieve their treatment goals.</p>
-        </div>
-        <div class="col-md-4 m-0 p-0"><img src="../assets/images/old_couple.webp" alt="old_couple" class="img-fluid"></div>
-        <div class="col-md-4 m-0 p-3" style="background:#fa7c5b;">
-            <h2 class="p-2 mt-3 text-light">Our Mission</h2>
-            <p class="p-2 text-light">Heally’s mission is to make it easier for people to choose alternatives to opiates and other drugs, for both pain relief and the improvement of overall health. We do this in a few ways. First, Heally provides telehealth visits with a licensed physician who is knowledgeable in the medicinal aspects of cannabis and other holistic routes. You will receive professional advice regarding effective natural treatments for your condition, all without ever leaving your home.</p>
-        </div>
-    </div>
-
+</div>
+	
 </div>
 </body>
 </html>
