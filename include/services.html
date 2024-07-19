@@ -36,14 +36,15 @@
   			color: #0e996a;
   		}
 
-  		.main{
-  			background: url("../assets/images/hero.webp");
-  			background-attachment: scroll;
-  			background-position: center;
-  			background-repeat: no-repeat;
-  			background-size: cover;
-  			padding: 150px;
-  		}
+        .main{
+            background: url("../assets/images/hero.webp");
+            background-attachment: scroll;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 150px;
+            padding-bottom: 150px;
+        }
 
   		.ecard{
   			box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
@@ -68,6 +69,18 @@
   			align-items: center;
   			padding: 20px;
   		}
+
+
+        /* CSS for screens less than 500px wide */
+        @media screen and (max-width: 500px) {
+  .p-5 {
+    padding: 20px !important; /* Adjust padding as needed */
+  }
+  .pcard{
+            width: 250px;
+        }
+}
+
 
 
   	</style>
@@ -123,7 +136,7 @@
 	          <a class="nav-link" href="services.html">Services</a>
 	        </li>
 			<li class="nav-item">
-	          <a class="nav-link" href="#">Health Blog</a>
+	          <a class="nav-link" href="blogs.html">Health Blog</a>
 	        </li>
 	        <li class="nav-item">
 	          <a class="nav-link" href="about.html">About Us</a>
@@ -138,8 +151,8 @@
 
 	<!-- Main banner -->
 	<div class="row main m-0 mt-5 d-flex align-items-center">
-        <div class="col-md-1"></div>
-		<div class="col-md-5 d-flex flex-column mt-5 p-2">
+        <div class="col-md-2"></div>
+		<div class="col-md-4 mt-5 p-5 d-flex flex-column">
 			<h1 class=" fw-bold">Get Mobile IV Therapy
                 in Austin</h1>
 			<p class="text-secondary mt-2 fw-bold">Looking for a convenient way to access mobile IV therapy in Austin? Heally's platform delivers personalized IV drip treatments right to your doorstep. Experience the transformative benefits of IV therapy from the comfort of your own home, all arranged seamlessly through our user-friendly service.</p>
