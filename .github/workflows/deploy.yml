@@ -3,7 +3,7 @@ name: Deploy to Hostinger
 on:
   push:
     branches:
-      - main  # The branch you are committing the new changes to
+      - master  # The branch you are committing the new changes to
 
 jobs:
   deploy:
