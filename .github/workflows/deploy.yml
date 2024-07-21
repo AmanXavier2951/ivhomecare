@@ -1,29 +1,25 @@
-name: Generate a build and push to another branch
+name: Deploy to Hostinger
 
 on:
   push:
     branches:
-      - main # The branch name your are commit the new changes
+      - main  # The branch you are committing the new changes to
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-    name: Build and Push
+    name: Deploy to Hostinger
     steps:
-      - name: git-checkout
+      - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Install all dependencies
-        run: npm install
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      - name: Build
-        run: npm run build # The build command of your project
-
-      - name: Push
-        uses: s0/git-publish-subdir-action@develop
+      - name: Sync Files to Hostinger
+        run: |
+          rsync -avz --delete --exclude '.git' . u185860992@157.173.209.3:/public_html/
         env:
-          REPO: self
-          BRANCH: main
-          FOLDER: main 
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
-          MESSAGE: "Build: ({sha}) {msg}" # The commit message
+          RSYNC_RSH: 'ssh -o StrictHostKeyChecking=no -p 65002'
