@@ -20,6 +20,6 @@ jobs:
 
       - name: Sync Files to Hostinger
         run: |
-          rsync -avz --delete --exclude '.git' . u185860992@157.173.209.3:/public_html/
+          rsync -avz --delete --exclude '.git' ./ u185860992@157.173.209.3:/public_html/
         env:
           RSYNC_RSH: 'ssh -o StrictHostKeyChecking=no -p 65002'
