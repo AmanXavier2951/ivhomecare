@@ -1,42 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<meta charset="UTF-8">
+	<meta charset="UTF-8">
     <title>Top-Rated Mobile IV Therapy in the USA - Fast and Effective</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Experience the best mobile IV therapy in the USA with IV Home Care. Boost your health with customized vitamin infusions delivered to your door. Book now!">
   	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+	  <link rel="stylesheet" href="style/layout.css">
   	<style>
-  		.nav-item{
-  			margin: 5px;
-  		}
-  		.nav-link{
-  			color: #000;
-  		}
-  		.nav-link:hover{
-  			color: #0e996a;
-  		}
-  		.dropdown-toggle{
-  			text-decoration: none;
-  			color: #000;
-  			border: none;
-  			background-color: unset;
-  		}
-  		.dropdown-toggle:hover{
-  			color: #0e996a;
-  		}
-
-  		.dropdown-item{
-  			margin: 5px;
-  		}
-
-  		.dropdown-item:hover{
-  			color: #0e996a;
-  		}
-
   		.main{
   			background: url("assets/images/main-banner.jpg");
   			background-attachment: scroll;
@@ -58,19 +31,6 @@
 			background-color: #ddd;
 			color: #0e996a;
 		}
-
-  		.ecard{
-  			box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-  			margin: 5px;
-  			width: 280px;
-  			height: 180px;
-  			display: flex;
-  			justify-content: center;
-  			align-items: center;
-  			padding: 5px;
-  		}
-  		.ecard i{ font-size: 40px; margin: 5px; padding: 10px; color: #003c46; }
-  		.ecard h5{margin: 5px; padding: 10px; color: #003c46;}
   		.ccard{
   			box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   			padding: 10px;
@@ -121,91 +81,6 @@
 		}
 
 
-  		.socialicons a{
-  			background-color: #0e996a;
-  			border-radius: 100px;
-  			width: 25px;
-  			height: 25px;
-  			display: flex;
-  			justify-content: center;
-  			align-items: center;
-  			padding: 20px;
-  			margin: 3px;
-  			color: #dddddd;
-  			text-decoration: none;
-  			transition: 0.4s;
-
-  		}
-
-  		/* Specific hover colors for each icon */
-		.socialicons a:nth-of-type(1):hover {
-		    background-color: #3b5998; /* Facebook */
-		}
-
-		.socialicons a:nth-of-type(2):hover {
-		    background-color: #1da1f2; /* Twitter */
-		}
-
-		.socialicons a:nth-of-type(3):hover {
-		    background-color: #c13584; /* Instagram */
-		}
-
-		.socialicons a:nth-of-type(4):hover {
-		    background-color: #0077b5; /* LinkedIn */
-		}
-
-		.locations{
-			list-style: none;
-			padding-top: 10px;
-		}
-		.locations li:nth-of-type(1){
-			margin-top: 10px;
-		}
-		.locations li a{
-			text-decoration: none;
-			color: grey;
-			font-weight: 400;
-		}
-		.locations li i{
-			color: grey;
-			margin-right: 2px;
-			font-size: 12px;
-		}
-		.locations li:hover i{
-			color: #FF0000;
-		}
-		.locations li:hover a{
-			color: #0e996a;
-		}
-
-		.subscription input{
-			padding: 9px;
-		}
-
-		.subscription button{
-			padding: 10px;
-			border: none;
-			background-color: #0e996a;
-			color: #dddddd	;
-			transition: 0.5s;
-		}
-
-		.subscription button:hover{
-			background-color: #fa7c5b;
-		}
-
-		/* CSS for screens less than 500px wide */
-		@media screen and (max-width: 500px) {
-  .p-5 {
-    padding: 20px !important; /* Adjust padding as needed */
-  }
-  .searchbox input {
-		width: 180px; 
-		}
-}
-
-
-
   	</style>
 </head>
 <body>
@@ -223,7 +98,7 @@
 	      <a class="navbar-brand" href="#" style="color: #0e996a; font-weight: bold;">ivhomecare</a>
 	      <ul class="navbar-nav mx-auto d-flex justify-content-center 	align-items-center">
 	        <li class="nav-item">
-	          <a class="nav-link" aria-current="page" href="#">Home</a>
+	          <a class="nav-link active" aria-current="page" href="#">Home</a>
 	        </li>
 	        <li class="nav-item">
 	          <!-- <a class="nav-link" href="#">Link</a> -->
@@ -256,16 +131,16 @@
 			</li>
 
 			<li class="nav-item">
-	          <a class="nav-link" href="include/services.html">Services</a>
+	          <a class="nav-link" href="include/services.php">Services</a>
 	        </li>
 			<li class="nav-item">
-	          <a class="nav-link" href="include/blogs.html">Health Blog</a>
+	          <a class="nav-link" href="include/blogs.php">Health Blog</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="include/about.html">About Us</a>
+	          <a class="nav-link" href="include/about.php">About Us</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="include/contact.html">Contact Us</a>
+	          <a class="nav-link" href="include/contact.php">Contact Us</a>
 	        </li>
 	      </ul>
 	    </div>
@@ -544,15 +419,15 @@
 		</div>
 		<div class="col-lg-2 m-0 p-2">
 			<ul class="locations"><b class="text-secondary">HELPFUL LINKS</b>	
-				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">About Us</a></li>
-				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">Blogs</a></li>
-				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">FAQ's</a></li>
-				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">Contact Us</a></li>
-				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="">Privacy Policy</a></li>
+				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="include/about.php">About Us</a></li>
+				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="include/blogs.php">Blogs</a></li>
+				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="include/faq.php">FAQ's</a></li>
+				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="include/contact.php">Contact Us</a></li>
+				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="include/privacy.php">Privacy Policy</a></li>
 			</ul>
 		</div>
 		<div class="col-lg-3 m-0 p-2">
-			<h4 class="p-2 fw-bold text-secondary">Subscribe our newsletter</h4>
+			<h4 class="p-2 fw-bold text-secondary">Subscribe to our newsletter</h4>
 			<p class="text-secondary">Filter out thenoise and nurture your inbox with health and wellness advice that's inclusive and rooted in medical expertise</p>
 			<div class="subscription">
 				<input type="text" class="mt-1"	 placeholder="Enter your Email">
@@ -563,7 +438,7 @@
 	</div>
 	<div class="row m-0 p-2 text-center">
 		<p class="text-secondary">
-			<i class="fa fa-copyright" aria-hidden="true"></i> 2024 IV Home Care. All Rights Reserved. | <a href="include/disclaimer.html" style="text-decoration: none;">Disclamer</a> | <a href="include/terms.html" style="text-decoration: none;">Terms of Service</a>
+			<i class="fa fa-copyright" aria-hidden="true"></i> 2024 IV Home Care. All Rights Reserved. | <a href="include/disclaimer.php" style="text-decoration: none;">Disclamer</a> | <a href="include/terms.php" style="text-decoration: none;">Terms of Service</a>
 		</p>
 	</div>
 </div>

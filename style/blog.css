@@ -1,0 +1,20 @@
+.bcard{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    margin: 5px;
+}
+.blogcontent {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit to three lines */
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis; /* Add ellipsis (...) for overflow */
+}
+
+.morebtn{
+  text-decoration: none;
+  color: #0e996a;
+  transition: 0.4s;
+}
+.morebtn:hover{
+  letter-spacing: 1px;
+}
