@@ -1,0 +1,116 @@
+.nav-item{
+    margin: 5px;
+}
+.nav-link{
+    color: #000;
+}
+.nav-link:hover{
+    color: #0e996a;
+}
+.dropdown-toggle{
+    text-decoration: none;
+    color: #000;
+    border: none;
+    background-color: unset;
+}
+.dropdown-toggle:hover{
+    color: #0e996a;
+}
+
+.dropdown-item{
+    margin: 5px;
+}
+
+.dropdown-item:hover{
+    color: #0e996a;
+}
+
+
+/* footer start  */
+
+.socialicons a{
+    background-color: #0e996a;
+    border-radius: 100px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 3px;
+    color: #dddddd;
+    text-decoration: none;
+    transition: 0.4s;
+
+}
+
+/* Specific hover colors for each icon */
+.socialicons a:nth-of-type(1):hover {
+  background-color: #3b5998; /* Facebook */
+}
+
+.socialicons a:nth-of-type(2):hover {
+  background-color: #1da1f2; /* Twitter */
+}
+
+.socialicons a:nth-of-type(3):hover {
+  background-color: #c13584; /* Instagram */
+}
+
+.socialicons a:nth-of-type(4):hover {
+  background-color: #0077b5; /* LinkedIn */
+}
+
+.locations{
+  list-style: none;
+  padding-top: 10px;
+}
+.locations li:nth-of-type(1){
+  margin-top: 10px;
+}
+.locations li a{
+  text-decoration: none;
+  color: grey;
+  font-weight: 400;
+}
+.locations li i{
+  color: grey;
+  margin-right: 2px;
+  font-size: 12px;
+}
+.locations li:hover i{
+  color: #FF0000;
+}
+.locations li:hover a{
+  color: #0e996a;
+}
+
+.subscription input{
+  padding: 9px;
+}
+
+.subscription button{
+  padding: 10px;
+  border: none;
+  background-color: #0e996a;
+  color: #dddddd	;
+  transition: 0.5s;
+}
+
+.subscription button:hover{
+  background-color: #fa7c5b;
+}
+/* footer end  */
+
+/* CSS for screens less than 500px wide */
+@media screen and (max-width: 500px) {
+    .p-5 {
+        padding: 20px !important; /* Adjust padding as needed */
+    }
+    .pcard{
+        width: 250px;
+    }
+    .searchbox input {
+        width: 180px; 
+    }
+}
