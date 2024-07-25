@@ -96,53 +96,38 @@
 	    </button>
 	    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 	      <a class="navbar-brand" href="#" style="color: #0e996a; font-weight: bold;">ivhomecare</a>
-	      <ul class="navbar-nav mx-auto d-flex justify-content-center 	align-items-center">
-	        <li class="nav-item">
-	          <a class="nav-link active" aria-current="page" href="#">Home</a>
-	        </li>
-	        <li class="nav-item">
-	          <!-- <a class="nav-link" href="#">Link</a> -->
-	          <div class="btn-group">
-				  <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-				    Choose Location
-				  </button>
-				  <ul class="dropdown-menu rounded-0">
-				    <li><a class="dropdown-item" href="#">some text</a></li>
-				    <li><a class="dropdown-item" href="#">Another action</a></li>
-				    <li><a class="dropdown-item" href="#">Something else here</a></li>
-				    <li><hr class="dropdown-divider"></li>
-				    <li><a class="dropdown-item" href="#">Separated link</a></li>
-				  </ul>
-				</div> 
-	        </li>
-	        <li class="nav-item">
-	            <div class="btn-group">
-				  <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-				    Some option 2
-				  </button>
-				  <ul class="dropdown-menu rounded-0">
-				    <li><a class="dropdown-item" href="#">Action</a></li>
-				    <li><a class="dropdown-item" href="#">Another action</a></li>
-				    <li><a class="dropdown-item" href="#">Something else here</a></li>
-				    <li><hr class="dropdown-divider"></li>
-				    <li><a class="dropdown-item" href="#">Separated link</a></li>
-				  </ul>
-				</div>        
-			</li>
+	     <ul class="navbar-nav mx-auto d-flex justify-content-center align-items-center">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Home</a>
+  </li>
+  <li class="nav-item">
+    <div class="btn-group">
+      <button class="btn btn-link nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Choose Location
+      </button>
+      <ul class="dropdown-menu rounded-0">
+        <li><a class="dropdown-item" href="location/sanfrancisco.php">San Francisco, CA</a></li>
+        <li><a class="dropdown-item" href="location/austin.php">Austin, Texas</a></li>
+        <li><a class="dropdown-item" href="location/boca.php">Boca Raton, Florida</a></li>
+        <li><a class="dropdown-item" href="location/reno.php">Reno, Nevada</a></li>
+        <li><a class="dropdown-item" href="location/losangeles.php">Los Angeles, CA</a></li>
+      </ul>
+    </div>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="include/services.php">Services</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="include/blogs.php">Health Blog</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="include/about.php">About Us</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="include/contact.php">Contact Us</a>
+  </li>
+</ul>
 
-			<li class="nav-item">
-	          <a class="nav-link" href="include/services.php">Services</a>
-	        </li>
-			<li class="nav-item">
-	          <a class="nav-link" href="include/blogs.php">Health Blog</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="include/about.php">About Us</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="include/contact.php">Contact Us</a>
-	        </li>
-	      </ul>
 	    </div>
 	  </div>
 	</nav>
@@ -253,137 +238,8 @@
 			</div>  
 		</div>
 	</div>
-	<div class="row m-0 mt-4 p-2 d-flex flex-column justify-content-center align-items-center">
-		<h2 class="text-center fw-bold p-2 text-success">Transform Your Health with IV Home Care</h2>
-		<p class="col-md-6 text-center text-secondary p-2 fw-bold">Don't wait to experience the revitalizing benefits of personalized IV infusion therapy. Our expert healthcare professionals are ready to bring tailored vitamin infusions, minerals, intramuscular shots, and amino acids directly to your doorstep. Enjoy the ultimate convenience and effectiveness of in-home treatment designed just for you.</p>
-	</div>
-	<div class="row m-0 p-4 d-flex justify-content-center align-items-center">
-				<div class="col-md-3">
-					<p><i class="fa fa-check text-success" aria-hidden="true"></i> Enhanced vitality and reduced stress</p>
-					<p><i class="fa fa-check text-success" aria-hidden="true"></i> Holistic health management</p>
-					<p><i class="fa fa-check text-success" aria-hidden="true"></i> A stronger immune system</p>
-				</div>
-				<div class="col-md-3">
-					<p><i class="fa fa-check text-success" aria-hidden="true"></i> mind-body harmony</p>
-					<p><i class="fa fa-check text-success" aria-hidden="true"></i> reduce chronic pain and inflammation</p>
-					<p><i class="fa fa-check text-success" aria-hidden="true"></i> strengthen mind-body connection</p>
-				</div>
-				<div class="col-md-3">
-					<p><i class="fa fa-check text-success" aria-hidden="true"></i> improve sleep quality and enhance energy levels</p>
-					<p><i class="fa fa-check text-success" aria-hidden="true"></i> boost mood and combat anxiety and depression</p>
-				</div>
-	</div>
 
-	<!-- faq's -->
-	<div class="row m-0 mt-4 p-2 bg-light d-flex justify-content-center align-items-start">
-		<h2 class="text-center fw-bold p-5">FAQ</h2>
-		<div class="col-md-5 m-0 p-2">
-			<div class="accordion" id="accordionExample">
-			  <div class="accordion-item m-2">
-			    <h2 class="accordion-header" id="headingOne">
-			      <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-			        What is the difference between traditional and alternative medicine?
-			      </button>
-			    </h2>
-			    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-			      <div class="accordion-body">
-			        <p>Traditional medicine focuses on diagnosing and treating specific diseases, often with medication or surgery. Alternative medicine takes a holistic approach, addressing mind, body, and spirit to prevent and heal illness.</p>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="accordion-item m-2">
-			    <h2 class="accordion-header" id="headingTwo">
-			      <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-			        What is alternative medicine?
-			      </button>
-			    </h2>
-			    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-			      <div class="accordion-body">
-			        <p>Alternative medicine unites a wide range of practices, from acupuncture and medical marijuana to yoga and meditation. It aims to restore balance within the body's energy systems, fostering natural healing and well-being.</p>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="accordion-item m-2">
-			    <h2 class="accordion-header" id="headingThree">
-			      <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-			        Is holistic medicine safe?
-			      </button>
-			    </h2>
-			    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-			      <div class="accordion-body">
-			        <p>Holistic medicine practices can be incredibly safe when integrated with traditional care by a qualified practitioner. Heally prioritizes evidence-based approaches and collaboration with your primary physician to ensure well-rounded, safe treatment.</p>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="accordion-item m-2">
-			    <h2 class="accordion-header" id="headingFour">
-			      <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-			        What are alternative medicine examples?
-			      </button>
-			    </h2>
-			    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-			      <div class="accordion-body">
-			        <p>Heally offers a variety of alternative and complementary services, including acupuncture, massage therapy, naturopathic medicine, nutrition coaching, ketamine therapy, IV drip therapy, ESA, medical marijuana.</p>
-			      </div>
-			    </div>
-			  </div>
-			</div>
-		</div>
-		<div class="col-md-5 m-0 p-2">
-			<div class="accordion" id="accordionExample">
-			  
-			  <div class="accordion-item m-2">
-			    <h2 class="accordion-header" id="headingFive">
-			      <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-			        How to get holistic treatment?
-			      </button>
-			    </h2>
-			    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-			      <div class="accordion-body">
-			        <p>To get integrative medicine treatment, connect with a qualified healthcare professional via Heally, discuss your health goals, and explore personalized strategies that encompass physical, mental, and emotional aspects.</p>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="accordion-item m-2">
-			    <h2 class="accordion-header" id="headingSix">
-			      <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-			        What is the main idea of holistic lifestyle?
-			      </button>
-			    </h2>
-			    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-			      <div class="accordion-body">
-			        <p>Living holistically involves making choices that support your overall well-being, including healthy diet, regular exercise, stress management, and spiritual practices. You can achieve this with Heally by connecting to alternative health doctors online.</p>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="accordion-item m-2">
-			    <h2 class="accordion-header" id="headingSeven">
-			      <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-			        What is the main idea of holistic lifestyle?
-			      </button>
-			    </h2>
-			    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
-			      <div class="accordion-body">
-			        <p>Living holistically involves making choices that support your overall well-being, including healthy diet, regular exercise, stress management, and spiritual practices. You can achieve this with Heally by connecting to alternative health doctors online.</p>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="accordion-item m-2">
-			    <h2 class="accordion-header" id="headingEight">
-			      <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-			        What is the main idea of holistic lifestyle?
-			      </button>
-			    </h2>
-			    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
-			      <div class="accordion-body">
-			        <p>Living holistically involves making choices that support your overall well-being, including healthy diet, regular exercise, stress management, and spiritual practices. You can achieve this with Heally by connecting to alternative health doctors online.</p>
-			      </div>
-			    </div>
-			  </div>
-			</div>
-		</div>
-	</div>
-	<!-- faq's end -->
+
 	<div class="row m-0 mt-4 p-5 d-flex flex-column justify-content-center align-items-center" style="background: #fa7c5b;">
 		<h2 class="text-center text-light fw-bold p-2">Transform Your Health with IV Home Care</h2>
 		<p class="col-md-9 text-light p-2 fw-bold">Don't wait to experience the revitalizing benefits of personalized IV infusion therapy. Our expert healthcare professionals are ready to bring tailored vitamin infusions, minerals, intramuscular shots, and amino acids directly to your doorstep. Enjoy the ultimate convenience and effectiveness of in-home treatment designed just for you.</p>
@@ -406,23 +262,19 @@
 		</div>
 		<div class="col-lg-2 m-0 p-2">
 			<ul class="locations"><b class="text-secondary">LOCATIONS</b>	
-				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="">San Francisco, CA</a></li>
-				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="">Sacromento Metropolitian Area, CA</a></li>
-				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="">East Bay, CA</a></li>
-				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="">SIlicon Valley, CA</a></li>
-				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="">Palm Springs, CA</a></li>
-				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="">Los Angeles County, CA</a></li>
-				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="">Orange County, CA</a></li>
-				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="">San Diego, CA</a></li>
-				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="">St. Petersburg, Fl</a></li>
+				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="location/sanfrancisco.php">San Francisco, CA</a></li>
+				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="location/austin.php">Austin, Texas</a></li>
+				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="location/boca.php">Boca Raton, Florida</a></li>
+				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="location/reno.php">Reno, Nevada</a></li>
+				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="location/losangeles.php">Los Angeles, CA</a></li>
 			</ul>
 		</div>
 		<div class="col-lg-2 m-0 p-2">
 			<ul class="locations"><b class="text-secondary">HELPFUL LINKS</b>	
 				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="include/about.php">About Us</a></li>
 				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="include/blogs.php">Blogs</a></li>
-				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="include/faq.php">FAQ's</a></li>
-				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="include/contact.php">Contact Us</a></li>
+				<!-- <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="include/faq.php">FAQ's</a></li> -->
+				<!-- <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="include/contact.php">Contact Us</a></li> -->
 				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="include/privacy.php">Privacy Policy</a></li>
 			</ul>
 		</div>

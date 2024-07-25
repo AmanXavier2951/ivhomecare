@@ -11,23 +11,19 @@
 		</div>
 		<div class="col-lg-2 m-0 p-2">
 			<ul class="locations"><b class="text-secondary">LOCATIONS</b>	
-				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="">San Francisco, CA</a></li>
-				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="">Sacromento Metropolitian Area, CA</a></li>
-				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="">East Bay, CA</a></li>
-				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="">SIlicon Valley, CA</a></li>
-				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="">Palm Springs, CA</a></li>
-				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="">Los Angeles County, CA</a></li>
-				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="">Orange County, CA</a></li>
-				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="">San Diego, CA</a></li>
-				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="">St. Petersburg, Fl</a></li>
+				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="../location/sanfrancisco.php">San Francisco, CA</a></li>
+				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="../location/austin.php">Austin, Texas</a></li>
+				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="../location/boca.php">Boca Raton, Florida</a></li>
+				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="../location/reno.php">Reno, Nevada</a></li>
+				<li><i class="fa fa-map-marker" aria-hidden="true"></i> <a href="../location/losangeles.php">Los Angeles, CA</a></li>
 			</ul>
 		</div>
 		<div class="col-lg-2 m-0 p-2">
 			<ul class="locations"><b class="text-secondary">HELPFUL LINKS</b>	
 				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="../include/about.php">About Us</a></li>
 				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="../include/blogs.php">Blogs</a></li>
-				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="../include/faq.php">FAQ's</a></li>
-				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="../include/contact.php">Contact Us</a></li>
+				<!-- <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="../include/faq.php">FAQ's</a></li> -->
+				<!-- <li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="../include/contact.php">Contact Us</a></li> -->
 				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i> <a href="../include/privacy.php">Privacy Policy</a></li>
 			</ul>
 		</div>
