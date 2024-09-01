@@ -11,7 +11,7 @@
 	  <link rel="stylesheet" href="style/layout.css">
   	<style>
   		.main{
-  			background: url("assets/images/main-banner.jpg");
+  			background: url("assets/images/bg6.jpg");
   			background-attachment: scroll;
   			background-position: center;
   			background-repeat: no-repeat;
@@ -24,7 +24,7 @@
 			background-color:#0e996a;
 			border: none;
 			color: #dddddd;
-			padding: 15px;
+			padding: 15px 25px;
 			transition: 0.5s;
 		}
 		.mbtn:hover{
@@ -133,10 +133,10 @@
 	</nav>
 
 	<!-- Main banner -->
-	<div class="row main m-0 mt-5">
-		<div class="col-md-4 mt-5 p-5">
+	<div class="row main m-0 mt-5 d-flex justify-content-center">
+		<div class="col-md-7 text-center mt-5 p-5">
 			<h1 class="text-light fw-bold">Your Trusted Partner For Liquid IV Therapy</h1>
-			<p class="text-light">Mobile IV Therapy and Wellness Services Delivered To You</p>
+			<p class="text-light pt-4">Mobile IV Therapy and Wellness Services Delivered To You</p>
 			<p class="text-light fw-bold">We are the USA's top-rated IV and mobile infusion therapy provider. Discover our services to rejuvenate your health and book your appointment today.</p>
 			<button class="mbtn">SCHEDULE IV DRIP</button>
 		</div>
